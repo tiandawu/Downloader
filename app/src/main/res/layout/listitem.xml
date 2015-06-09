@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:weightSum="1">
+
+    <TextView
+        android:id="@+id/tv_showtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+    <ProgressBar
+        android:id="@+id/mpb_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_showtext"
+        android:layout_marginTop="4dp"
+        />
+
+    <Button
+        android:id="@+id/mbt_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mpb_progress"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_selector"
+        android:onClick="click"
+        android:text="@string/download"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/mbt_pause"
+        android:layout_below="@id/mpb_progress"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_selector"
+        android:onClick="click"
+        android:text="@string/pause"
+        android:textSize="15sp"/>
+
+
+
+</RelativeLayout>
